@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Daisy.Controls"
+             Title="Controls">
+    <ContentPage.Content>
+
+
+        <StackLayout Orientation="Vertical"
+                     Margin="50">
+
+            <Image Source="https://i.imgur.com/asAgvg4.png"
+                   Margin="10"/>
+
+            <Label Text="Controls"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                FontSize="Title"
+                TextColor="#769c80"/>
+
+
+            <Label x:Name="dscrp1" 
+                Text="Pick your device and then the following options."
+                HorizontalTextAlignment="Center"/>
+
+            <Picker x:Name="devicepicker" 
+                    Title="Devices"
+                    ItemsSource="{Binding Name}">
+            </Picker>
+
+            <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center"
+            Margin="10">
+
+                <Button Text="Water" 
+                    VerticalOptions="Center"
+                    CornerRadius="20"
+                    IsEnabled="False"/>
+
+                <Button Text="Disable Auto-Water" 
+                    VerticalOptions="Center"
+                    CornerRadius="20"
+                    IsEnabled="False"/>
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

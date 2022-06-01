@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Daisy.HomePage"
+             Title="Home">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     Margin="40">
+
+            <Image Source="https://imgur.com/2Ifzgw6.png" Aspect="AspectFit"/>
+
+            <Label Text="What is Daisy?"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                FontSize="Title"
+                TextColor="#769c80"/>
+
+
+            <Label x:Name="dscrp1" 
+                Text="{Binding Description1}"/>
+
+            <Label Text="Goals"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Bold"
+                FontSize="Title"
+                TextColor="#769c80"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
